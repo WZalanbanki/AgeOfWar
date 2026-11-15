@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Age of War</title>
+</head>
+<body>
+    <header class="text-white py-3">
+        <h1 class="text-center">Age of War</h1>
+    </header>
+    <main>
+        <p class="text-center fs-4 fw-bold">Arany: <span class="arany">50</span></p>
+        <section class="csatater">
+            <div class="kek-elet"><div></div></div>
+            <div class="piros-elet"><div></div></div>
+            <img class="kek-bazis" src="img/blue_base.png" alt="Kék bázis">
+            <img class="piros-bazis" src="img/red_base.png" alt="Piros bázis">
+            <div class="fold"></div>
+        </section>
+        <p class="text-center mt-3">
+            <button type="button" class="btn btn-primary katona-gomb">Katonabutton</button>
+            <button type="button" class="btn btn-primary nehez-gomb">Nehézgyalogos</button>
+        </p>
+        <p class="text-center">
+            <button type="button" class="btn btn-warning inditas-gomb">Játék indítása</button>
+            <button type="button" class="btn btn-info megallitas-gomb">Játék megállítása</button>
+        </p>
+        <h2>Játékszabályok</h2>
+        <p></p>
+    </main>
+    <footer class="text-white py-3">
+        <p class="text-center m-0">Minden jog fenntartva!</p>
+    </footer>
+    <div class="uzenet-hatter d-none">
+        <div class="uzenet-ablak text-center p-4">
+            <h2 class="uzenet-cim"></h2>
+            <p class="uzenet-szoveg"></p>
+            <button type="button" class="btn btn-warning uzenet-gomb">Rendben</button>
+        </div>
+    </div>
+    <script src="js/Harcos.js"></script>
+    <script src="js/Jatek.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
