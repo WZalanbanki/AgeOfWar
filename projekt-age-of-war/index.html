@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Age of War</title>
+</head>
+<body class="text-white p-2 p-md-4">
+    <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3">
+        <h1 class="m-0">Age of War</h1>
+        <p class="m-0 leiras">Hozz létre harcosokat és rombold le a piros bázist</p>
+    </header>
+    <main>
+        <div class="doboz arany-doboz px-3 py-2 mb-3">
+            <span class="cimke">ARANY</span> <span class="arany">50</span>
+        </div>
+        <section class="csatater">
+            <div class="bazis-elet kek-elet"><div></div></div>
+            <div class="bazis-elet piros-elet"><div></div></div>
+            <img class="bazis kek-bazis" src="img/blue_base.png" alt="Kék bázis">
+            <img class="bazis piros-bazis" src="img/red_base.png" alt="Piros bázis">
+            <div class="fold"></div>
+        </section>
+        <div class="d-flex gap-3 mt-3">
+            <button type="button" class="doboz gomb katona-gomb">
+                <img src="img/blue_soldier.png" alt="Katona">
+                <span class="nev">Katona</span>
+                <span class="ar">15 arany</span>
+            </button>
+            <button type="button" class="doboz gomb nehez-gomb">
+                <img src="img/blue_heavy.png" alt="Nehézgyalogos">
+                <span class="nev">Nehézgyalogos</span>
+                <span class="ar">50 arany</span>
+            </button>
+        </div>
+        <div class="d-flex justify-content-md-end mt-3">
+            <p class="m-0 d-flex gap-2 flex-fill flex-md-grow-0">
+                <button type="button" class="btn btn-warning flex-fill inditas-gomb">Játék indítása</button>
+                <button type="button" class="btn btn-info flex-fill megallitas-gomb">Játék megállítása</button>
+            </p>
+        </div>
+        <div class="doboz p-4 mt-4">
+            <h2>Játékszabályok</h2>
+            <p class="m-0">Másodpercenként aranyat kapsz, az aranyból katonákat csinálhatsz, akik maguktól elindulnak
+                az ellenség bázisa felé. Ha ellenséggel találkoznak, harcolnak, ha elérik a piros bázist, sebzik. Minden legyőzött
+                ellenségért plusz arany jár, az nyer, aki előbb lerombolja a másik bázisát</p>
+        </div>
+    </main>
+    <footer class="text-center mt-4">
+        <p class="m-0">Minden jog fenntartva!</p>
+    </footer>
+
+    <div class="uzenet-hatter d-none">
+        <div class="uzenet-ablak doboz p-4 text-center">
+            <h2 class="uzenet-cim fs-4"></h2>
+            <p class="uzenet-szoveg"></p>
+            <button type="button" class="btn btn-warning uzenet-gomb">Rendben</button>
+        </div>
+    </div>
+
+    <script src="js/Harcos.js"></script>
+    <script src="js/Jatek.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
